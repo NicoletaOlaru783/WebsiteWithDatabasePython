@@ -1,0 +1,106 @@
+table {
+    width: 50%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#t01 th {
+    background-color: black;
+    color: white;
+}
+
+.fa-trash-o:hover,
+.fa-edit:hover,
+.fa-robot:hover,
+.fa-share-square:hover {
+    cursor: pointer;
+}
+
+.containerMainPage {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    background: #0250c5;
+    background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+    background: -o-linear-gradient(bottom, #0250c5, #d43f8d);
+    background: -moz-linear-gradient(bottom, #0250c5, #d43f8d);
+    background: linear-gradient(bottom, #0250c5, #d43f8d);
+    position: relative;
+    z-index: 1;
+}
+
+    .containerMainPage::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url('../images/img-01.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+.jumbotron {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+.form-row {
+    text-align: center;
+}
+
+#myForm {
+    background-color: #e9ecef;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-color: #17a2b87d;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
